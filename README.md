@@ -6,7 +6,7 @@ This repository provides all scripts a walk-through to repeat analyses shwon in 
 2: Cross-tissue signaling for myokines in the context of sex and hormones
 3: Generation of pseudo-single-cell muscle maps and cross-tissue regressions
 
-# Datasets (preprocessed) used in this study are available here:
+# Datasets (pre-processed) used in this study are available here:
 https://drive.google.com/drive/folders/1YKT8lkGzGVFk74CqS5FmT6lIH0ZVfgfJ?usp=sharing
 
 Publicly available data used here were acquired from:
