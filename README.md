@@ -1,4 +1,4 @@
-# Human Myokine Signaling Study Overview
+# Human myokine signaling study overview
 This repository provides all scripts a walk-through to repeat analyses shwon in Velez, Van et al. 2021
 
 # Analyses are broken down into 3 sections:
