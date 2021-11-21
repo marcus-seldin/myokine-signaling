@@ -8,10 +8,10 @@ This repository provides all scripts and a detailed walk-through to repeat analy
 
 3: Generation of pseudo-single-cell muscle maps and cross-tissue regressions (Fig 3)
 
-# Datasets (pre-processed) used in this study are available here:
+# All datasets (pre-processed) used in this study are available here:
 https://drive.google.com/drive/folders/1YKT8lkGzGVFk74CqS5FmT6lIH0ZVfgfJ?usp=sharing
 
-## Publicly available data used here were acquired from:
+## Publicly available data used (above) were acquired from:
 
 GTEx V8: https://gtexportal.org/home/datasets
 
