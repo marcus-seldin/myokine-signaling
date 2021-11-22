@@ -8,7 +8,7 @@ Cross-tissue signaling for myokines in the context of sex and hormones (Fig 2)
 
 Generation of pseudo-single-cell muscle maps and cross-tissue regressions (Fig 3)
 
-Each analysis should operate independently and all use the datasets provided below
+Each analysis should operate independently and all use the datasets provided below.
 
 # All datasets (pre-processed) used in this study are available here:
 https://drive.google.com/drive/folders/1YKT8lkGzGVFk74CqS5FmT6lIH0ZVfgfJ?usp=sharing
@@ -28,3 +28,4 @@ Human skeletal muslce sc-seq data: https://www.ncbi.nlm.nih.gov/geo/query/acc.cg
 Mouse muscle-specific Esr1 KO (MERKO) and WT skeletal muslce RNA-Seq were generated as part of this study and deposited in: 
 
 # Any questions/comments/issues pelase contact: mseldin@uci.edu
+
