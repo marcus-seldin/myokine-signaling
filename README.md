@@ -2,18 +2,20 @@
 This repository provides all scripts and a detailed walk-through to repeat analyses shown in Velez, Van et al. 2021
 
 # Analyses are broken down into 3 sections:
-1: Myokine differential expression by sex and muslce-specific enrichment (Fig 1)
+Myokine differential expression by sex and muslce-specific enrichment (Fig 1)
 
-2: Cross-tissue signaling for myokines in the context of sex and hormones (Fig 2)
+Cross-tissue signaling for myokines in the context of sex and hormones (Fig 2)
 
-3: Generation of pseudo-single-cell muscle maps and cross-tissue regressions (Fig 3)
+Generation of pseudo-single-cell muscle maps and cross-tissue regressions (Fig 3)
+
+Each analysis should operate independently, but all use the datasets below
 
 # All datasets (pre-processed) used in this study are available here:
 https://drive.google.com/drive/folders/1YKT8lkGzGVFk74CqS5FmT6lIH0ZVfgfJ?usp=sharing
 
 ## Publicly available data used (above) were acquired from:
 
-GTEx V8: https://gtexportal.org/home/datasets
+GTEx V8: https://gtexportal.org/home/datasets (these data were filteres where individuals were required to show counts > 0 in 1.2e6 gene_tissue combinations across all data.  Filtering consists of 310 individuals and 1.8e7 gene_tissue combinations) 
 
 Uniprot annotations for secreted proteins in humans: https://www.uniprot.org/uniprot/?query=locations%3A%28location%3A%22Secreted+%5BSL-0243%5D%22+type%3Acomponent%29+AND+organism%3A%22Homo+sapiens+%28Human%29+%5B9606%5D%22&sort=score
 
