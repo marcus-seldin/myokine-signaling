@@ -26,3 +26,5 @@ MGI list of mouse-human orthologs: http://www.informatics.jax.org/homology.shtml
 Human skeletal muslce sc-seq data: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130977
 
 Mouse muscle-specific Esr1 KO (MERKO) and WT skeletal muslce RNA-Seq were generated as part of this study and deposited in: 
+
+# Any questions/comments/issues pelase contact: mseldin@uci.edu
