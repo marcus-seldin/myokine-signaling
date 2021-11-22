@@ -8,7 +8,7 @@ Cross-tissue signaling for myokines in the context of sex and hormones (Fig 2)
 
 Generation of pseudo-single-cell muscle maps and cross-tissue regressions (Fig 3)
 
-Each analysis should operate independently, but all use the datasets below
+Each analysis should operate independently and all use the datasets provided below
 
 # All datasets (pre-processed) used in this study are available here:
 https://drive.google.com/drive/folders/1YKT8lkGzGVFk74CqS5FmT6lIH0ZVfgfJ?usp=sharing
