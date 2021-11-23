@@ -27,5 +27,10 @@ Human skeletal muslce sc-seq data: https://www.ncbi.nlm.nih.gov/geo/query/acc.cg
 
 Mouse muscle-specific Esr1 KO (MERKO) and WT skeletal muslce RNA-Seq were generated as part of this study and deposited in: 
 
-# Any questions/comments/issues pelase contact: mseldin@uci.edu
+# Additional Considerations
+While the tissues shown in this study capture notable metabolic processes, all available tissues are included in the filtered dataset to enable exapnsion of the analysis.  Specifically, these can be identified as columns in 'working_dataset'.  The scripts cna be easily repurposed to incorporate other tissues (for example, coronary artery)
+
+We apologize for bulky and recursive portions of the scripts.  Realizing that there and more efficent mechanisms of executing these analyses, we felt that breaking down step-by-step is helpful to facilitate learning.  
+
+All feedback is welcome, please email: mseldin@uci.edu
 
