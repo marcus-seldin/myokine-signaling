@@ -2,7 +2,7 @@
 This repository provides all scripts and a detailed walk-through to repeat analyses shown in Velez, Van et al. 2021
 
 # Analyses are broken down into 3 sections:
-Myokine differential expression by sex and muslce-specific enrichment (Fig 1)
+Myokine differential expression by sex and muscle-specific enrichment (Fig 1)
 
 Cross-tissue signaling for myokines in the context of sex and hormones (Fig 2)
 
