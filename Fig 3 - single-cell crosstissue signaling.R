@@ -1,5 +1,3 @@
-setwd('E:/My Drive/lab files/sex-difference myokine study/github/raw files')
-
 #Load required packages
 library(reticulate)
 library(Rcpp)
