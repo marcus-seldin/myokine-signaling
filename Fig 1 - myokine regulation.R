@@ -1,7 +1,7 @@
 #Load required packages
 library(WGCNA)
 library(ggplot2)
-library(colormaps)
+library(colormap)
 library(dplyr)
 library(ggrepel)
 library(Rmisc)
@@ -127,7 +127,7 @@ set1 = melt(tissue.tissue.all$bicor)
 colnames(set1) = c('gene_symbol', 'myokine', 'male_bicor')
 set2 = melt(tissue.tissue.all$p)
 set1$male_pvalue = set2$value
-set1$myo_gene = paste0(set1$myokine, set1$gene_symbol)
+set1$myo_gene = paste0(set1$myokine, '_', set1$gene_symbol)
 sex_pathways = set1
 
 #now repeat for females
@@ -142,7 +142,7 @@ set1 = melt(tissue.tissue.all$bicor)
 colnames(set1) = c('gene_symbol', 'myokine', 'female_bicor')
 set2 = melt(tissue.tissue.all$p)
 set1$female_pvalue = set2$value
-set1$myo_gene = paste0(set1$myokine, set1$gene_symbol)
+set1$myo_gene = paste0(set1$myokine, '_', set1$gene_symbol)
 
 #add the female-specific cors to all pathways
 sex_pathways$female_bicor = set1$female_bicor[match(sex_pathways$myo_gene, set1$myo_gene)]
@@ -167,7 +167,7 @@ sex_pathways$both_bicor = set1$bicor[match(sex_pathways$myo_gene, set1$myo_gene)
 sex_pathways$both_pvalue = set1$pvalue[match(sex_pathways$myo_gene, set1$myo_gene)]
 
 #For each myokine add a category based on DE
-sex_pathways$de_category = res1$cat[match(sex_pathways$myokine, myokine_dist$gene_symbol)]
+sex_pathways$de_category = res1$cat[match(sex_pathways$myokine, res1$gene_symbol)]
 
 #Now the dataframe sex_pathways contains all myokine ~ muscle gene correlations in each DE category
 #subset by DE category then
