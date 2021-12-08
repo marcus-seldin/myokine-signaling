@@ -25,7 +25,7 @@ MGI list of mouse-human orthologs: http://www.informatics.jax.org/homology.shtml
 
 Human skeletal muslce sc-seq data: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130977
 
-Mouse muscle-specific Esr1 KO (MERKO) and WT skeletal muslce RNA-Seq were generated as part of this study and deposited in: 
+Mouse muscle-specific Esr1 KO (MERKO) and WT skeletal muslce RNA-Seq were generated as part of this study and deposited in: PRJNA785746
 
 # Additional Considerations
 While the tissues shown in this study capture notable metabolic processes, all available tissues are included in the filtered dataset to enable exapnsion of the analysis.  Specifically, these can be identified as columns in 'working_dataset'.  The scripts cna be easily repurposed to incorporate other tissues (for example, coronary artery)
