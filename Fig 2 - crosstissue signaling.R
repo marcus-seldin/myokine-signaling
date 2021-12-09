@@ -1,5 +1,3 @@
-setwd('G:/My Drive/lab files/sex-difference myokine study/github/raw files/')
-
 #Load required packages
 library(WGCNA)
 library(ggplot2)
