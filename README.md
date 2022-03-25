@@ -32,5 +32,5 @@ While the tissues shown in this study capture notable metabolic processes, all a
 
 We apologize for bulky and recursive portions of the scripts.  Realizing that there and more efficent mechanisms of executing these analyses, we felt that breaking down step-by-step is helpful to facilitate learning.  
 
-All feedback is welcome, please email: mseldin@uci.edu
+All feedback is welcome, please email: lmvelez@uci.edu & mseldin@uci.edu
 
