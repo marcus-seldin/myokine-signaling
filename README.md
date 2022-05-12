@@ -15,7 +15,7 @@ https://drive.google.com/drive/folders/1YKT8lkGzGVFk74CqS5FmT6lIH0ZVfgfJ?usp=sha
 
 ## Publicly available data used (above) were acquired from:
 
-GTEx V8: https://gtexportal.org/home/datasets (the raw data were filtered where individuals were required to show counts > 0 in 1.2e6 gene_tissue combinations across all data.  Given that our goal was to look across tissues at enrichments, this was done to limit spurious influence of genes only expressed in specific tissues.  Post-filtering consists of 310 individuals and 1.8e7 gene_tissue combinations) 
+GTEx V8: https://gtexportal.org/home/datasets (the raw data were filtered where individuals were required to show counts > 0 in 1.2e6 gene_tissue combinations across all data.  Given that our goal was to look across tissues at enrichments, this was done to limit spurious influence of genes only expressed in specific tissues.  Post-filtering consists of 310 individuals and 1.8e7 gene_tissue combinations). This results in 52% NA values in the final matrix used. 
 
 Uniprot annotations for secreted proteins in humans: https://www.uniprot.org/uniprot/?query=locations%3A%28location%3A%22Secreted+%5BSL-0243%5D%22+type%3Acomponent%29+AND+organism%3A%22Homo+sapiens+%28Human%29+%5B9606%5D%22&sort=score
 
