@@ -1,5 +1,5 @@
 # Human myokine signaling study overview
-This repository provides all scripts and a detailed walk-through to repeat analyses shown in Velez, Van et al. 2021
+This repository provides all scripts and a detailed walk-through to repeat analyses shown in Velez, Van et al. 2022 (https://elifesciences.org/articles/76887)
 
 # Analyses are broken down into 3 sections:
 Myokine differential expression by sex and muscle-specific enrichment (Fig 1)
