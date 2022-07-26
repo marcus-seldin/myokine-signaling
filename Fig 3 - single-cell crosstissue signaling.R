@@ -81,7 +81,7 @@ JackStrawPlot(immune.combined, dims = 1:20)
 #Reduce 
 immune.combined <- RunUMAP(immune.combined, reduction = "pca", dims = 1:18)
 immune.combined <- FindNeighbors(immune.combined, reduction = "pca", dims = 1:18)
-immune.combined <- FindClusters(immune.combined, resolution = 0.6)
+immune.combined <- FindClusters(immune.combined, resolution = 0.65)
 #14 clusters
 
 #Other iterations were tried before ariving at conclusion (above).
