@@ -61,6 +61,7 @@ musc4 = CreateSeuratObject(counts = dataset1, project = "skl_musc_decon", min.ce
 
 #list muscle sc-seq datasets
 set_test = c(musc1, musc2, musc3, musc4)
+
 ifnb.list <- lapply(X = set_test, FUN = function(x) {
   x <- NormalizeData(x)
   x <- FindVariableFeatures(x, selection.method = "vst", nfeatures = 2000)
@@ -70,32 +71,34 @@ immune.anchors <- FindIntegrationAnchors(object.list = ifnb.list, anchor.feature
 immune.combined <- IntegrateData(anchorset = immune.anchors)
 DefaultAssay(immune.combined) <- "integrated"
 
-#Run the standard workflow for visualization and clustering
+# Run the standard workflow for visualization and clustering
 immune.combined <- ScaleData(immune.combined, verbose = FALSE)
 immune.combined <- RunPCA(immune.combined, npcs = 30, verbose = FALSE)
 immune.combined <- JackStraw(immune.combined, num.replicate = 100)
 immune.combined <- ScoreJackStraw(immune.combined, dims = 1:20)
 JackStrawPlot(immune.combined, dims = 1:20)
-
-#Note: dim1:18 was used, as the larget drop in PC pvalue enrichment was observed between PC 18 & PC 19
-#Reduce 
 immune.combined <- RunUMAP(immune.combined, reduction = "pca", dims = 1:18)
 immune.combined <- FindNeighbors(immune.combined, reduction = "pca", dims = 1:18)
-immune.combined <- FindClusters(immune.combined, resolution = 0.65)
-#14 clusters
-
-#Other iterations were tried before ariving at conclusion (above).
 #immune.combined <- FindClusters(immune.combined, resolution = 0.5) #12 clusters
 #immune.combined <- FindClusters(immune.combined, resolution = 0.3) #11 clusters
 #immune.combined <- FindClusters(immune.combined, resolution = 0.2) #11 clusters
 #immune.combined <- FindClusters(immune.combined, resolution = 0.1) #9 clusters
 #immune.combined <- FindClusters(immune.combined, resolution = 0.4) #12 clusters
+immune.combined <- FindClusters(immune.combined, resolution = 0.6) #14 clusters
 #immune.combined <- FindClusters(immune.combined, resolution = 0.7) #11 clusters
 #immune.combined <- FindClusters(immune.combined, resolution = 0.8) #11 clusters
 #immune.combined <- FindClusters(immune.combined, resolution = 0.9) #11 clusters
 #immune.combined <- FindClusters(immune.combined, resolution = 1.1) #11 clusters
 
+DimPlot(immune.combined, reduction = "umap", label = TRUE, repel = TRUE)
+
+#looks like 12 cell types
 DefaultAssay(immune.combined) <- "RNA"
+nk.markers <- FindMarkers(immune.combined, ident.1 = 0, verbose = FALSE)
+#nk.markers2 <- limma()
+#looks like myotubes
+nk.markers$cluster = paste0('0')
+marker_set = nk.markers
 
 #Next, individual gene enrichment per cluster are written to a merged table
 #Cluster 0
